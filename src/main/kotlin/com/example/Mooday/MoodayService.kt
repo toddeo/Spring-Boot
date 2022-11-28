@@ -1,4 +1,4 @@
-package Mooday
+package com.example.Mooday
 
 import org.springframework.stereotype.Service
 
