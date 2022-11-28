@@ -1,4 +1,4 @@
-package Mooday
+package com.example.Mooday
 
 import javax.persistence.Entity
 import javax.persistence.Id
