@@ -3,14 +3,10 @@ package com.example.Mooday
 import org.springframework.stereotype.Service
 
 @Service
-class MoodayService {
+class MoodayService(val moodayRepository: MoodayRepository) {
 
     fun getAllMooday(): List<Mooday>{
 
-    return listOf(
-    Mooday(1, "Girard", "Antoine"),
-    Mooday(2, "Dupont", "Pierre"),
-    Mooday(3, "Lebeau", "Dylan"),
-    )
+    return moodayRepository.findAll()
     }
 }
