@@ -7,10 +7,12 @@ import javax.persistence.Table
 
 @Entity
 @Table
-data class Mooday(
+data class Adult(
 
     @Id
     val id: Long,
-    val nom: String,
-    val prenom: String
+    val lastName: String,
+    val firstName: String,
+    val image: String,
+    val emotion: String
 )
